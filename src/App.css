@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #111;
+  color: white;
+}
+
+.website {
+  width: 100%;
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 70% 50%,
+      #4d4035 0%,
+      #211e1a 35%,
+      #111 75%
+    );
+}
+
+/* NAVBAR */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 60px;
+
+  z-index: 20;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+
+  font-size: 14px;
+  color: #ccc;
+}
+
+.navbar button {
+  background: transparent;
+  color: white;
+
+  border: 1px solid #777;
+  border-radius: 30px;
+
+  padding: 12px 25px;
+
+  cursor: pointer;
+}
+
+/* HERO */
+
+
+/* TEXT */
+
+.hero-content {
+  position: absolute;
+
+  left: 8%;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 10;
+
+  width: 430px;
+}
+
+.small-title {
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: #aaa;
+
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: clamp(60px, 8vw, 120px);
+
+  line-height: 0.85;
+
+  letter-spacing: -5px;
+
+  font-weight: 700;
+}
+
+h1 span {
+  color: #c7b49b;
+}
+
+.description {
+  margin-top: 35px;
+
+  max-width: 350px;
+
+  line-height: 1.6;
+
+  color: #bbb;
+}
+
+.hero-button {
+  margin-top: 35px;
+
+  padding: 15px 28px;
+
+  border: none;
+  border-radius: 30px;
+
+  background: #eee;
+  color: #111;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* CAR */
+
+
+/* SCROLL */
+
+.scroll-text {
+  position: absolute;
+
+  bottom: 35px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  font-size: 11px;
+
+  letter-spacing: 4px;
+
+  color: #999;
+
+  z-index: 10;
+}
+
+
+.car-scene-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+/* HERO */
+
+.hero {
+  position: relative;
+
+  height: 100vh;
+  min-height: 700px;
+
+  overflow: hidden;
+
+  z-index: 5;
+}
+
+
+/* TEXT */
+
+.hero-content {
+  position: absolute;
+
+  left: 8%;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 10;
+
+  width: 430px;
+}
+
+
+/* 3D SCENE */
+
+.car-scene-wrapper {
+  position: fixed;
+
+  top: 0;
+  right: 0;
+
+  width: 55vw;
+  height: 100vh;
+
+  z-index: 2;
+
+  overflow: hidden;
+
+  pointer-events: none;
+}
+
+.car-scene-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
+
+  display: block;
+}
+
+
+/* SCROLL */
+
+.scroll-text {
+  position: absolute;
+
+  bottom: 35px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  font-size: 11px;
+
+  letter-spacing: 4px;
+
+  color: #999;
+
+  z-index: 10;
+}
